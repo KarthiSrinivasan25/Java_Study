@@ -6,10 +6,17 @@ public class VowelConsonant {
         System.out.println("Enter a Character");
         char letter = read.next().charAt(0);
 
-        if ((letter=='a' || letter=='A') || (letter=='e' || letter=='E') || (letter=='i' || letter=='I') || (letter=='o' || letter=='O') || (letter=='u' || letter=='U')) {
+
+        if (Character.isLetter(letter)) {
+             if ((letter=='a' || letter=='A') || (letter=='e' || letter=='E') || (letter=='i' || letter=='I') || (letter=='o' || letter=='O') || (letter=='u' || letter=='U')) {
             System.out.println("This letter is Vowel");
         }else{
             System.out.println("This letter is Consonant");
         }
+        }else{
+            System.out.println("This not a Character");
+        }
+
+       
     }
 }
